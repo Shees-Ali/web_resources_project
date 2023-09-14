@@ -1,6 +1,11 @@
 <!-- The sidebar -->
 <div class="sidebar">
-  <a routerLink="/main" routerLinkActive="active">Home</a>
+  <a
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Home</a
+  >
   <a routerLink="/resource" routerLinkActive="active">Resources</a>
   <a routerLink="/links" routerLinkActive="active">Refrence Links</a>
   <a routerLink="/book" routerLinkActive="active">Books</a>
